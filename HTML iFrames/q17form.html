@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submission</title>
+</head>
+<body>
+
+    <h1>Simple Form</h1>
+
+    <form
+        action="result.html"
+        method="get"
+        target="resultFrame">
+
+        <label for="name">Enter your name:</label>
+
+        <input
+            type="text"
+            id="name"
+            name="name">
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <br><br>
+
+    <iframe
+        name="resultFrame"
+        title="Form Result"
+        width="80%"
+        height="150">
+    </iframe>
+
+</body>
+</html>
