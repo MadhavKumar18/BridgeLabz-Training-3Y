@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Subscription Panel | Assignment 9</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="q6.js" defer></script>
+</head>
+<body>
+<main>
+  <header><p class="muted">jQuery Assignment 9 · Question 6</p><h1>Event Subscription Panel</h1></header>
+  
+<section aria-label="Subscription preferences">
+  <p>Choose topics to receive notifications about.</p>
+  <div id="topics" class="grid">
+    <article class="card topic"><h2>Technology</h2><button class="subscribe">Subscribe</button></article>
+    <article class="card topic"><h2>Data Science</h2><button class="subscribe">Subscribe</button></article>
+    <article class="card topic"><h2>Web Development</h2><button class="subscribe">Subscribe</button></article>
+    <article class="card topic"><h2>Career Updates</h2><button class="subscribe">Subscribe</button></article>
+    <article class="card topic"><h2>Events</h2><button class="subscribe">Subscribe</button></article>
+  </div>
+  <div class="toolbar"><input id="newTopic" type="text" placeholder="New topic name"><button id="addTopic">Add Topic</button></div>
+  <div class="toolbar"><select id="removeTopic" aria-label="Choose topic to remove"><option value="">Choose topic to remove</option></select><button id="removeSelected" class="secondary">Remove Topic</button></div>
+  <p id="subscriptionMessage" class="status" role="status"></p>
+</section>
+
+</main>
+</body>
+</html>

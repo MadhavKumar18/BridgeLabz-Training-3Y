@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Special Offer Banner | Assignment 9</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="q4.js" defer></script>
+</head>
+<body>
+<main>
+  <header><p class="muted">jQuery Assignment 9 · Question 4</p><h1>Special Offer Banner</h1></header>
+  
+<section aria-label="Promotional offers">
+  <div class="toolbar">
+    <button id="hideBanners">Hide</button><button id="showBanners" class="secondary">Show</button>
+    <button id="slideUp" class="secondary">Slide Up</button><button id="slideDown" class="secondary">Slide Down</button>
+    <button id="fadeOut" class="secondary">Fade Out</button><button id="fadeIn">Fade In</button>
+  </div>
+  <div id="banners">
+    <article class="banner"><h2>Offer 1: Student Special</h2><p>Get 20% off selected learning products.</p></article>
+    <article class="banner"><h2>Offer 2: Weekend Deal</h2><p>Save more when you shop this weekend.</p></article>
+    <article class="banner"><h2>Offer 3: New User Bonus</h2><p>Enjoy a welcome discount on your first order.</p></article>
+    <article class="banner"><h2>Offer 4: Free Delivery</h2><p>Free delivery on eligible orders.</p></article>
+    <article class="banner"><h2>Offer 5: Limited Time</h2><p>Explore the latest deals before they end.</p></article>
+  </div>
+  <p class="muted" id="rotationStatus" aria-live="polite">Automatic rotation: every 5 seconds.</p>
+</section>
+
+</main>
+</body>
+</html>

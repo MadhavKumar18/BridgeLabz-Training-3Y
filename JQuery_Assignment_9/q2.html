@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Highlight | Assignment 9</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="q2.js" defer></script>
+</head>
+<body>
+<main>
+  <header><p class="muted">jQuery Assignment 9 · Question 2</p><h1>Product Highlight</h1></header>
+  
+<section aria-label="Product catalogue">
+  <p class="muted">Select a product, hover for details, or use the star to save a favorite.</p>
+  <div class="grid">
+    <article class="item product" data-discount="true" data-stock="in">
+      <button class="favorite" aria-label="Toggle favorite">☆</button><h2>Wireless Headphones</h2><p>₹1,999 <del>₹2,499</del></p><p class="details">Bluetooth 5.3 · 30-hour battery · Noise reduction</p><span class="muted">Discount deal</span>
+    </article>
+    <article class="item product" data-discount="false" data-stock="in">
+      <button class="favorite" aria-label="Toggle favorite">☆</button><h2>Smart Watch</h2><p>₹2,499</p><p class="details">Fitness tracking · Heart-rate monitor · Water resistant</p>
+    </article>
+    <article class="item product" data-discount="true" data-stock="out">
+      <button class="favorite" aria-label="Toggle favorite">☆</button><h2>Portable Speaker</h2><p>₹999 <del>₹1,299</del></p><p class="details">Compact speaker · 12-hour playtime</p><span class="out">Out of stock</span>
+    </article>
+    <article class="item product" data-discount="false" data-stock="in">
+      <button class="favorite" aria-label="Toggle favorite">☆</button><h2>USB-C Hub</h2><p>₹1,299</p><p class="details">6-in-1 hub · HDMI · USB 3.0</p>
+    </article>
+    <article class="item product" data-discount="true" data-stock="in">
+      <button class="favorite" aria-label="Toggle favorite">☆</button><h2>Mechanical Keyboard</h2><p>₹3,199 <del>₹3,799</del></p><p class="details">Tactile switches · RGB backlight</p>
+    </article>
+  </div>
+</section>
+
+</main>
+</body>
+</html>

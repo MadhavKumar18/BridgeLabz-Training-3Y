@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multi-jQuery Widgets | Assignment 9</title><link rel="stylesheet" href="styles.css">
+<!-- Load two jQuery versions and release the global $ name after each load. -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>var jqV1 = jQuery.noConflict(true);</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>var jqV2 = jQuery.noConflict(true);</script>
+<script src="q9.js" defer></script></head><body><main>
+<header><p class="muted">jQuery Assignment 9 · Question 9</p><h1>Multi-jQuery Widgets</h1></header>
+<section><p>Version 1 controls the carousel and active widget. Version 2 controls the notification modal and tooltips.</p>
+<div class="widget" id="carouselWidget"><h2>Carousel</h2><p id="carouselText">Slide 1: Learn jQuery basics</p><div class="toolbar"><button id="previousSlide">Previous</button><button id="nextSlide">Next</button></div></div>
+<div class="widget" id="widgetOne"><h2>Widget One</h2><p>Click to highlight this widget using jQuery version 1.</p></div>
+<div class="widget" id="widgetTwo" title="This tooltip is attached by jQuery version 2."><h2>Widget Two</h2><p>Hover here to see the tooltip managed by version 2.</p></div>
+<div class="toolbar"><button id="openModal">Show Notification</button></div></section>
+<div class="modal" id="noticeModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box"><h2 id="modalTitle">Notification</h2><p>This modal is managed by jQuery version 2.</p><button id="closeModal">Close</button></div></div>
+</main></body></html>

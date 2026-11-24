@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search Courses | Assignment 9</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="q7.js" defer></script>
+</head>
+<body>
+<main>
+  <header><p class="muted">jQuery Assignment 9 · Question 7</p><h1>Search Courses</h1></header>
+  
+<section aria-label="Course search">
+  <label for="courseSearch">Search courses</label>
+  <input id="courseSearch" type="search" placeholder="Try Python, SQL, design..." autocomplete="off">
+  <p id="courseCount" aria-live="polite">Showing 5 courses</p>
+  <div id="courseList">
+    <article class="course"><h2>Python Programming</h2><p>Learn Python fundamentals and problem solving.</p></article>
+    <article class="course"><h2>Data Science with Python</h2><p>Explore data analysis, Pandas, and visualization.</p></article>
+    <article class="course"><h2>SQL for Beginners</h2><p>Write queries and work with relational databases.</p></article>
+    <article class="course"><h2>Frontend Web Development</h2><p>Build responsive websites using HTML, CSS, and JavaScript.</p></article>
+    <article class="course"><h2>UI/UX Design Basics</h2><p>Understand user research, wireframes, and design systems.</p></article>
+  </div>
+  <div class="toolbar"><button id="clearSearch" class="secondary">Clear Search</button></div>
+</section>
+
+</main>
+</body>
+</html>
